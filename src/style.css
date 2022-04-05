@@ -126,6 +126,8 @@ body {
      width: 120%;
  }
  footer {
+     position: relative;
+     bottom: 0;
      background-color: var(--text);
      color: white;
      font: 1em monospace;
