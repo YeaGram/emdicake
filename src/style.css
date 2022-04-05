@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --text:#131210;
+}
+body {    
+    
+}
+ nav {
+     position: relative;
+ }
+ nav .navMain {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .4rem;
+    background: rgb(223,223,223);
+    background: linear-gradient(0deg, rgba(223,223,223,1) 0%, rgba(255,255,255,1) 100%);
+    background-repeat: no-repeat;
+    
+ }
+ nav .menuBar {
+     font-size: 2em;
+ }
+ nav button {
+     outline: none;
+     border: none;
+     background: none;
+    order: 2;
+    margin-right: 1rem;
+    color: var(--text);
+    cursor: pointer;
+ }
+ nav .label {
+     position: relative;
+     z-index: 4;
+     margin-left: 1rem;
+ }
+ nav .label a {
+     display: flex;
+     align-items: center;
+     text-decoration: none;    
+     color: var(--text);
+ }
+ nav .label h2 {
+     font: bold 1.2em 'Montserrat',sans-serif ;
+ }
+ nav img {
+     width: 3em;
+ }
+ nav ul::before {
+     content: " ";
+     position: absolute;
+     background-color: rgb(19, 18, 16);
+     width: var(--eight,0%);
+     border-radius: 100px;
+     height: .3rem;
+     transition: 2s ease;
+     transition-delay: 1s;
+ }
+ 
+ nav ul {
+     /* display: none; */
+     position: absolute;
+     padding-bottom: 1rem;
+     z-index: 0;
+     transform: translateY(-100%);
+     bottom: 0;
+     left: 0;
+     right: 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     transition: 1s ease;
+     background: rgb(223,223,223);
+     background: linear-gradient(0deg, rgba(223, 223, 223, 0.877) 0%, rgba(255,255,255,1) 100%);
+     background-repeat: no-repeat;
+ }
+ nav li {
+     list-style: none;
+     padding: 1em 0;
+ }
+ nav li:last-child a,
+ article a{
+    background-color: var(--text);
+    color: white;
+    padding: .4em 2em;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+ }
+ nav li a{
+     font: 1.5em 'Montserrat',sans-serif;
+     text-decoration: none;
+     color: var(--text);
+     text-shadow: 1px 1px 2px rgba(19, 19, 19, 0.9);
+ }
+
+ article .container {
+     width: 80%;
+     margin: 2rem auto;
+     font: 1em "poppins",sans-serif;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ article h3 {
+    font-size: 2em;
+    text-align: center;
+ }
+ article p {
+     margin-top: 1rem;
+     font-size: 1em;
+     text-indent: 1em;
+ }
+ article a {
+     margin-top: 2rem;
+     max-width: 5rem;
+ }
+ article img {
+     width: 120%;
+ }
+ footer {
+     background-color: var(--text);
+     color: white;
+     font: 1em monospace;
+     padding: 1em;
+     text-align: center;
+ }
+ footer a {
+    text-decoration: none;
+    font: 1em "poppins";
+    color: white;
+ }
